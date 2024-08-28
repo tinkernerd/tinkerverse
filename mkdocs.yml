@@ -1,0 +1,4 @@
+site_name: The TinkerDocs
+#site_url: https://github.com/Nicholas-stull/tinkerverse
+theme:
+  name: material
