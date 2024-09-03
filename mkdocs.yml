@@ -67,11 +67,17 @@ plugins:
 
 # Navigation
 
+nav:
+  - About: About/index.md
+  - Blog:
+    - blog/index.md
+  
 not_in_nav: |
   /.obsidian
   /99-Utilities/**
   /99-Utilities/service/**.md
   /99-Utilities/template/**.md
+  README.md
 
 
 
@@ -89,11 +95,11 @@ social:
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/squidfunk
 
-extra:
-  consent:
-    title: Cookie consent
-    description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
+#extra:
+  #consent:
+  #  title: Cookie consent
+  #  description: >- 
+  #    We use cookies to recognize your repeated visits and preferences, as well
+  #    as to measure the effectiveness of our documentation and whether users
+  #    find what they're searching for. With your consent, you're helping us to
+  #    make our documentation better.
