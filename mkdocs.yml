@@ -67,10 +67,10 @@ plugins:
 
 # Navigation
 
-nav:
-  - About: About/index.md
-  - Blog:
-    - blog/index.md
+#nav:
+#  - About: About/index.md
+#  - Blog:
+#    - blog/index.md
   
 not_in_nav: |
   /.obsidian
@@ -78,7 +78,7 @@ not_in_nav: |
   /99-Utilities/service/**.md
   /99-Utilities/template/**.md
   README.md
-
+  /About/resume.md
 
 
 
