@@ -1,6 +1,7 @@
 site_name: The TinkerDocs
 #site_url: https://github.com/Nicholas-stull/tinkerverse
 site_author: Nicholas Stull
+site_url: https://docs.nicholasstull.com
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
   minutes – searchable, customizable, in 60+ languages, for all devices
