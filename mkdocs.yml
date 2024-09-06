@@ -67,11 +67,6 @@ plugins:
 
 
 # Navigation
-
-#nav:
-#  - About: About/index.md
-#  - Blog:
-#    - blog/index.md
   
 not_in_nav: |
   /.obsidian
