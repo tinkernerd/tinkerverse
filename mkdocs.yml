@@ -82,8 +82,7 @@ plugins:
   - typeset
   - macros:
       include_dir: docs/macros
-
-  - termynal
+  #- termynal
 
 
   # Continuous integration
@@ -102,8 +101,6 @@ plugins:
 
 extra_javascript:
     - js/metar.js
-#extra_css:
-#  - css/wrap.css
 
 
 # Additional configuration
