@@ -89,12 +89,12 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-        - git-revision-date-localized:
-            enable_creation_date: true
-            type: timeago
-        - git-committers:
-            repository: tinkernerd/tinkerverse
-            token: !ENV GH_TOKEN
+        #- git-revision-date-localized:
+        #    enable_creation_date: true
+        #    type: timeago
+        #- git-committers:
+        #    repository: tinkernerd/tinkerverse
+        #    token: !ENV GH_TOKEN
         - optimize
         - minify:
             minify_html: true
@@ -159,7 +159,7 @@ markdown_extensions:
       normalize_issue_symbols: true
       repo_url_shorthand: true
       user: tinkernerd
-      repo: mkdocs-material
+      repo: tinkerverse
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
