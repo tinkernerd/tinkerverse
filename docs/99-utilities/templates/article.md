@@ -4,4 +4,4 @@ date: {{date}}
 source: 
 ---
 # Title
-{% include 'not_my_work.md' %}
+{% include not_my_work.md %}
