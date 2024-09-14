@@ -1,34 +1,51 @@
-site_name: The TinkerDocs
-#site_url: https://github.com/Nicholas-stull/tinkerverse
+# Project information
+site_name: TinkerNerd's Docs
+site_url: https://tinkernerd.github.io/tinkerverse/
 site_author: Nicholas Stull
-site_url: https://docs.nicholasstull.com
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
   minutes – searchable, customizable, in 60+ languages, for all devices
 
 # Repository
-repo_url: https://github.com/Nicholas-Stull/TinkerDocs
-repo_name: Nicholas-Stull/TinkerDocs
+repo_name: tinkernerd/TinkerDocs
+repo_url: https://github.com/tinkernerd/TinkerDocs
 
 # Copyright
-copyright: Copyright &copy; 2024 Nicholas Stull
+copyright: Copyright &copy; Nicholas Stull
 
 # Configuration
 theme:
   name: material
   features:
-  #  navigation:
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.footnote.tooltips
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.instant.preview
+    - navigation.path
+    - navigation.prune
+    #- navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
-    - navigation.path
-    - navigation.indexes
-  # TOC
+    - navigation.top
+    # - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
     - toc.follow
+    # - toc.integrate
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -51,51 +68,126 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  #favicon: assets/favicon.png
+  favicon: assets/favicon.png
   icon:
     logo: logo
-    repo: fontawesome/brands/github-alt
 
-#Plugins
+# Plugins
 plugins:
-  - blog
+  - meta
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
-      minify_html: true
+  - social:
+      cards_layout: default/variant
+  - typeset
+  - macros:
+      include_dir: docs/macros
+
+  - termynal
 
 
+  # Continuous integration
+  - group:
+      enabled: !ENV CI
+      plugins:
+        - git-revision-date-localized:
+            enable_creation_date: true
+            type: timeago
+        - git-committers:
+            repository: tinkernerd/tinkerverse
+            token: !ENV GH_TOKEN
+        - optimize
+        - minify:
+            minify_html: true
 
-# Navigation
-  
-not_in_nav: |
-  /.obsidian
-  /99-Utilities/**
-  /99-Utilities/service/**.md
-  /99-Utilities/template/**.md
-  README.md
-  /About/resume.md
-
+extra_javascript:
+    - js/metar.js
+#extra_css:
+#  - css/wrap.css
 
 
 # Additional configuration
-social:
+extra:
+  annotate:
+    json: [.s2]
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8L5YDggZiVjgvBKfv-XCdbQAEJrseRh8MBh-jS92TU2aqzw/viewform?usp=pp_url&entry.853143515={url}" target=_blank>telling us what you're missing</a>.
+  social:
     - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    - icon: fontawesome/brands/python
-      link: https://pypi.org/project/mkdocs-material/
-    - icon: fontawesome/brands/mastodon
-      link: https://fosstodon.org/@squidfunk
-    - icon: fontawesome/brands/x-twitter
-      link: https://x.com/squidfunk
+      link: https://github.com/tinkernerd
 
-#extra:
-  #consent:
-  #  title: Cookie consent
-  #  description: >- 
-  #    We use cookies to recognize your repeated visits and preferences, as well
-  #    as to measure the effectiveness of our documentation and whether users
-  #    find what they're searching for. With your consent, you're helping us to
-  #    make our documentation better.
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: tinkernerd
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+not_in_nav: |
+  /.
+  /assets
+  /smc
+  /js
+  /css
+  /99-utilities
+  README.md
