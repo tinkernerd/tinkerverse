@@ -28,7 +28,7 @@ jobs:
             mkdocs-material-
       - run: sudo apt-get install pngquant 
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-      - run: pip install mkdocs-git-revision-date-localized-plugin mkdocs-macros-plugin termynal mkdocs-git-committers-plugin-2
+      - run: pip install mkdocs-git-revision-date-localized-plugin mkdocs-macros-plugin termynal mkdocs-git-committers-plugin-2 mkdocs-minify-plugin
       - run: mkdocs gh-deploy --force
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
