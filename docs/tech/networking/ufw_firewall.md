@@ -5,7 +5,7 @@ source: https://phoenixnap.com/kb/configure-firewall-with-ufw-on-ubuntu
 author: Sofija Simic
 title: Set Up UFW Firewall
 ---
-{% include not_my_work.md %}
+{% include "not_my_work.md" %}
 # How to Set Up UFW Firewall on Ubuntu 20.04 & 22.04
 
 > ## Excerpt
