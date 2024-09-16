@@ -88,12 +88,6 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-        - git-revision-date-localized:
-            enable_creation_date: true
-            type: timeago
-        - git-committers:
-            repository: tinkernerd/tinkerverse
-            token: !ENV GH_TOKEN
         - optimize
         - minify:
             minify_html: true
