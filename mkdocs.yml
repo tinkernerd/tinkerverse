@@ -7,8 +7,8 @@ site_description: >-
   minutes – searchable, customizable, in 60+ languages, for all devices
 
 # Repository
-repo_name: Tinkernerd/TinkerDocs
-repo_url: https://github.com/tinkernerd/TinkerDocs
+repo_name: Tinkernerd/Tinkerverse
+repo_url: https://github.com/tinkernerd/tinkerverse
 
 # Copyright
 copyright: Copyright &copy; Nicholas Stull
@@ -18,7 +18,7 @@ theme:
   name: material
   features:
     - announce.dismiss
-    - content.action.edit
+    - content.action.edits
     - content.action.view
     - content.code.annotate
     - content.code.copy
@@ -89,12 +89,12 @@ plugins:
   - group:
       enabled: !ENV CI
       plugins:
-        #- git-revision-date-localized:
-        #    enable_creation_date: true
-        #    type: timeago
-        #- git-committers:
-        #    repository: tinkernerd/tinkerverse
-        #    token: !ENV GH_TOKEN
+        - git-revision-date-localized:
+            enable_creation_date: true
+            type: timeago
+        - git-committers:
+            repository: tinkernerd/tinkerverse
+            token: !ENV GH_TOKEN
         - optimize
         - minify:
             minify_html: true
@@ -187,6 +187,4 @@ not_in_nav: |
   /js
   /css
   /99-utilities
-  /macros
-  /resources
   README.md
