@@ -80,8 +80,8 @@ plugins:
   - social:
       cards_layout: default/variant
   - typeset
-  - macros:
-      include_dir: docs/macros
+#  - macros:
+#      include_dir: docs/macros
   #- termynal
 
 
@@ -100,7 +100,7 @@ plugins:
             minify_html: true
 
 extra_javascript:
-    - js/metar.js
+    - 99-utilities/js/metar.js
 
 
 # Additional configuration

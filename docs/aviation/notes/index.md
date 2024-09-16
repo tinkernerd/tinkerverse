@@ -1,5 +1,7 @@
 ---
-title: "Private Pilots License (PPL)"
+title: Private Pilots License (PPL)
+topic:
+  - Aviation
 ---
 # Private Pilots License (PPL)
 ___
@@ -13,8 +15,8 @@ ___
     - [Sporty's Online Training](https://courses.sportys.com/training/portal/course/PRIVATE/welcome)
 
 - Notes for PPL:
-    - [Chapter 1](ch1.md)
-    - [Chapter 2](ch2.md)   
+    - [Chapter 1](aviation/notes/ch1.md)
+    - [Chapter 2](aviation/notes/ch2.md)   
     - [Chapter 3](ch3.md)
     - [Chapter 4](ch4.md)
     - [Chapter 5](ch5.md)

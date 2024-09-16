@@ -1,5 +1,7 @@
 ---
-title: "Aviation Adventures"
+title: Aviation Adventures
+topic:
+  - Aviation
 ---
 # ✈️ Welcome to Aviation Adventures! ✈️
 ___
@@ -29,10 +31,11 @@ _|_|______________
 - Chapters 1-6 covering everything from pre-flight checks to the joys of solo flights.
   
 ### Airports:
-- [Michigan Airport Example](mi_airport_ex.md)
+- [Michigan Airport Example](dow_air.md)
     
 ### Weather:
 - [Understanding Aviation Weather](weather.md)
+- [For "Up to Date" Metar](metar.md)
     
 ### Sectional Charts:
 - [The Art of Sectional Charts](sectional_charts.md)

@@ -1,7 +1,9 @@
 ---
 title: VPN
 topic:
-  - VPN
+- Tech
+- VPN
+- Networking
 ---
 # VPN
 ## Tailscale
