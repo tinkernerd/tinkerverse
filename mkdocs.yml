@@ -80,8 +80,7 @@ plugins:
   - social:
       cards_layout: default/variant
   - typeset
-#  - macros:
-#      include_dir: docs/macros
+  - macros:
   #- termynal
 
 
