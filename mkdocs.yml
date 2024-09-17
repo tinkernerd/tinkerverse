@@ -9,6 +9,7 @@ site_description: >-
 # Repository
 repo_name: Tinkernerd/Tinkerverse
 repo_url: https://github.com/tinkernerd/tinkerverse
+edit_uri: edit/main/docs/
 
 # Copyright
 copyright: Copyright &copy; Nicholas Stull
@@ -18,7 +19,7 @@ theme:
   name: material
   features:
     - announce.dismiss
-    - content.action.edits
+    - content.action.edit
     - content.action.view
     - content.code.annotate
     - content.code.copy
