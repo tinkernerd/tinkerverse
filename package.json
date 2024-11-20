@@ -1,0 +1,33 @@
+{
+  "name": "tinkerdocs",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "generate:sitemap": "node .vitepress/theme/scripts/generateSitemap.js",
+    "docs:format": "prettier --write '**/*.{js,ts,css,scss}'",
+    "docs:build": "pnpm run generate:sitemap && vitepress build",
+    "docs:dev": "vitepress dev --host",
+    "docs:start": "vitepress dev"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@vue/tsconfig": "^0.6.0",
+    "dotenv": "^16.4.5",
+    "js-yaml": "^4.1.0",
+    "markdown-it-footnote": "^4.0.0",
+    "prettier": "^3.3.3",
+    "sass-embedded": "^1.72.0",
+    "vitepress": "~1.5.0",
+    "vue": "^3.5.13"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": true,
+    "singleQuote": true,
+    "useTabs": false
+  },
+  "packageManager": "pnpm@9.3.0",
+  "dependencies": {
+    "gray-matter": "^4.0.3"
+  }
+}

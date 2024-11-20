@@ -1,8 +1,8 @@
 ---
 title: Aviation Adventures
-topic:
-  - Aviation
+outline: deep
 ---
+
 # ✈️ Welcome to Aviation Adventures! ✈️
 ___
 
@@ -25,28 +25,19 @@ _|_|______________
 ```
 
 ## ✈️ Explore Your Aviation Notes:
+### All Notes - Check Sidebar
+
 
 ### Private Pilot License (PPL) Notes:
-- [Introduction to PPL](notes/index.md)
-- Chapters 1-6 covering everything from pre-flight checks to the joys of solo flights.
-  
-### Airports:
-- [Michigan Airport Example](dow_air.md)
-    
-### Weather:
-- [Understanding Aviation Weather](weather.md)
-- [For "Up to Date" Metar](metar.md)
-    
-### Sectional Charts:
-- [The Art of Sectional Charts](sectional_charts.md)
-
-### AOPA & AirVenture:
-- [Aircraft Owners and Pilots Association (AOPA)](aopa.md)
-- [The Legendary AirVenture](airventure.md)
-
-### Pilot Speak:
-- [Phonetic Alphabet](phonetic_alphabet.md)
-
+1. **Info**
+    - [Foxtrot Flight Training LLC](https://www.foxtrotflighttraining.com/)
+2. **Recs**
+    - [Private Pilot License (PPL) - Definition, Privileges, & Requirements / ATP Flight School](https://atpflightschool.com/become-a-pilot/flight-training/private-pilot-license.html)
+3. **Financial**
+    - [Private Student Loan Apply | Stratus Financial](https://stratus.finance/apply-pilot-student-loan/)
+4. **Education** 
+    - [Sporty's Online Training](https://courses.sportys.com/training/portal/course/PRIVATE/welcome)
+#### Class Notes
 ---
 
 Fly safe, and remember: the sky isn't the limit—it’s just the beginning!
