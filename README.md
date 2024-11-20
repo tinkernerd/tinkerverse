@@ -1,9 +1,3 @@
----
-title: The Tinkering Nerd
-hide:
-    - navigation
-    - toc
----
 ![Header](https://raw.githubusercontent.com/tinkernerd/tinkerverse/main/.github/assets/banner.png)
 # TinkerDocs
 
