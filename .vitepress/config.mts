@@ -1,5 +1,8 @@
+/* @ts-expect-error */
 import dotenv from 'dotenv';
+/* @ts-expect-error */
 import mdFootnote from 'markdown-it-footnote';
+/* @ts-expect-error */
 import { defineConfig, type HeadConfig } from 'vitepress';
 
 /* Nav and Sidebar */
