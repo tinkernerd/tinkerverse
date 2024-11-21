@@ -25,7 +25,7 @@ export default {
     return {
       airports: ['KBEH', 'KMDW', 'KSBN', 'KORD'], // List of airports
       metars: {}, // Store METAR data for each airport
-      apiKey: import.meta.env.VITE_METAR_KEY.trim(), // Replace with your actual API key
+      apiKey: import.meta.env.VITE_METAR_KEY, // Replace with your actual API key
     };
   },
   methods: {
