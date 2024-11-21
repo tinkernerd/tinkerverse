@@ -1,14 +1,14 @@
-/* @ts-expect-error */
 import dotenv from 'dotenv';
 /* @ts-expect-error */
 import mdFootnote from 'markdown-it-footnote';
-/* @ts-expect-error */
 import { defineConfig, type HeadConfig } from 'vitepress';
 
 /* Nav and Sidebar */
 import {sidebarAviation, sidebarWindows, sidebarDocumentation, sidebarSecurity, sidebarRecipes, sidebarPhotography, sidebarNetworking, sidebarLinux, sidebar3dPrint, sidebarJS, sidebarArduino, sidebarDocker, sidebarBible, sidebarPY, sidebarGithub } from './theme/data/sidebar.ts'
 
 dotenv.config();
+
+
 const BASE_PATH = '/';
 const BASE_WITH_ORIGIN = `https://nicholasstull.com${BASE_PATH}`;
 // https://vitepress.dev/reference/site-config

@@ -25,7 +25,7 @@ export default {
     return {
       airports: ['KBEH', 'KMDW', 'KSBN', 'KORD'], // List of airports
       metars: {}, // Store METAR data for each airport
-      apiKey: 'env.METAR_TOKEN', // Replace with your actual API key
+      apiKey: import.meta.env.VITE_METAR_KEY.trim(), // Replace with your actual API key
     };
   },
   methods: {
@@ -61,19 +61,6 @@ export default {
 
 <style scoped lang="scss">
 .live-metar {
-  width: 1920px;
-  border-collapse: collapse;
-
-  th,
-  td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-
-  th {
-    background-color: #f4f4f4;
-  }
 
   .top-text {
     background: none; // Removes the background color
