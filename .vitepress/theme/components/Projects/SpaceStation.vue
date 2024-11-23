@@ -40,7 +40,6 @@ const captions = ref([
   max-width: 800px;
   padding: 20px;
   margin: 20px auto;
-  background-color: rgba(249, 249, 249, 0.664);
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -50,7 +49,6 @@ const captions = ref([
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #333;
   text-align: center;
 }
 
@@ -71,13 +69,10 @@ const captions = ref([
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #gallery figcaption {
-  background-color: black;
   margin-top: 0.5rem;
   font-size: 0.85em;
-  color: white;
 }
 </style>

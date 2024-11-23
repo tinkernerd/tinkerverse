@@ -71,7 +71,6 @@ function clearFeedback() {
   align-items: center;
   flex-direction: column;
   padding: 20px;
-  background-color: rgba(249, 249, 249, 0.664);
   border: 1px solid #ddd;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -89,7 +88,6 @@ function clearFeedback() {
 /* Header styles */
 header h1 {
   font-size: 2rem;
-  color: black;
   margin-bottom: 20px;
 }
 
@@ -97,7 +95,6 @@ header h1 {
 article h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: black;
 }
 
 /* Styling for shapes container */
@@ -134,7 +131,6 @@ article h2 {
 /* Feedback text styles */
 #feedback {
   font-size: 1.2rem;
-  color: #666;
   margin-top: 20px;
   height: 1.5em; /* Prevent content shifting */
   text-align: center;

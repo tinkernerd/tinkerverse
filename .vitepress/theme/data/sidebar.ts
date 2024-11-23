@@ -37,7 +37,7 @@ function sidebar3dPrint(): DefaultTheme.SidebarItem[] {
 /// Sidebar items for the Arduino section.
 function sidebarArduino(): DefaultTheme.SidebarItem[] {
     return [
-         {
+        {
             text: 'Notes',
             collapsed: false,
             base: '/arduino/',
@@ -86,7 +86,104 @@ function sidebarAviation(): DefaultTheme.SidebarItem[] {
 
 /// Sidebar items for the Bible section.
 function sidebarBible(): DefaultTheme.SidebarItem[] {
-    return [];
+    return [
+                {
+            text: 'Old Testament',
+            base: '/bible/',
+            collapsed: true,
+            items: [
+                { text: 'Overview', link: 'old-testament' },
+                { text: 'Genesis', link: 'genesis' },
+                { text: 'Exodus', link: 'exodus' },
+                { text: 'Leviticus', link: 'leviticus' },
+                { text: 'Numbers', link: 'numbers' },
+                { text: 'Deuteronomy', link: 'deuteronomy' },
+                { text: 'Joshua', link: 'joshua' },
+                { text: 'Judges', link: 'judges' },
+                { text: 'Ruth', link: 'ruth' },
+                { text: '1 Samuel', link: '1-samuel' },
+                { text: '2 Samuel', link: '2-samuel' },
+                { text: '1 Kings', link: '1-kings' },
+                { text: '2 Kings', link: '2-kings' },
+                { text: '1 Chronicles', link: '1-chronicles' },
+                { text: '2 Chronicles', link: '2-chronicles' },
+                { text: 'Ezra', link: 'ezra' },
+                { text: 'Nehemiah', link: 'nehemiah' },
+                { text: 'Esther', link: 'esther' },
+                { text: 'Job', link: 'job' },
+                { text: 'Psalms', link: 'psalms' },
+                { text: 'Proverbs', link: 'proverbs' },
+                { text: 'Ecclesiastes', link: 'ecclesiastes' },
+                { text: 'Song of Solomon', link: 'song-of-solomon' },
+                { text: 'Isaiah', link: 'isaiah' },
+                { text: 'Jeremiah', link: 'jeremiah' },
+                { text: 'Lamentations', link: 'lamentations' },
+                { text: 'Ezekiel', link: 'ezekiel' },
+                { text: 'Daniel', link: 'daniel' },
+                { text: 'Hosea', link: 'hosea' },
+                { text: 'Joel', link: 'joel' },
+                { text: 'Amos', link: 'amos' },
+                { text: 'Obadiah', link: 'obadiah' },
+                { text: 'Jonah', link: 'jonah' },
+                { text: 'Micah', link: 'micah' },
+                { text: 'Nahum', link: 'nahum' },
+                { text: 'Habakkuk', link: 'habakkuk' },
+                { text: 'Zephaniah', link: 'zephaniah' },
+                { text: 'Haggai', link: 'haggai' },
+                { text: 'Zechariah', link: 'zechariah' },
+                { text: 'Malachi', link: 'malachi' },
+            ]
+        },
+        {
+            text: 'New Testament',
+            base: '/bible/',
+            collapsed: true,
+            items: [
+                { text: 'Overview', link: 'new-testament' },
+                { text: 'Matthew', link: 'matthew' },
+                { text: 'Mark', link: 'mark' },
+                { text: 'Luke', link: 'luke' },
+                { text: 'John', link: 'john' },
+                { text: 'Acts', link: 'acts' },
+                { text: 'Romans', link: 'romans' },
+                { text: '1 Corinthians', link: '1-corinthians' },
+                { text: '2 Corinthians', link: '2-corinthians' },
+                { text: 'Galatians', link: 'galatians' },
+                { text: 'Ephesians', link: 'ephesians' },
+                { text: 'Philippians', link: 'philippians' },
+                { text: 'Colossians', link: 'colossians' },
+                { text: '1 Thessalonians', link: '1-thessalonians' },
+                { text: '2 Thessalonians', link: '2-thessalonians' },
+                { text: '1 Timothy', link: '1-timothy' },
+                { text: '2 Timothy', link: '2-timothy' },
+                { text: 'Titus', link: 'titus' },
+                { text: 'Philemon', link: 'philemon' },
+                { text: 'Hebrews', link: 'hebrews' },
+                { text: 'James', link: 'james' },
+                { text: '1 Peter', link: '1-peter' },
+                { text: '2 Peter', link: '2-peter' },
+                { text: '1 John', link: '1-john' },
+                { text: '2 John', link: '2-john' },
+                { text: '3 John', link: '3-john' },
+                { text: 'Jude', link: 'jude' },
+                { text: 'Revelation', link: 'revelation' },
+            ]
+        },
+        {
+            text: 'Bible Study',
+            base: '/bible/',
+            items: [
+                { text: 'overview', link: 'old-testament' },
+            ]
+        },
+        {
+            text: 'Bible Notes',
+            base: '/bible/',
+            items: [
+                { text: 'overview', link: 'old-testament' },
+            ]
+        }
+    ];
 }
 
 /// Sidebar items for the Docker section.
@@ -190,7 +287,10 @@ function sidebarJS(): DefaultTheme.SidebarItem[] {
                 { text: 'Random Quote', link: 'random-quotes' },
                 { text: 'Shapes Selection Tool', link: 'shapes' },
                 { text: 'Space Station Tracker', link: 'space-station' },
-                { text: 'Temperature Converter', link: 'temp-converter' }
+                { text: 'Temperature Converter', link: 'temp-converter' },
+                { text: 'Nasa API', link: 'nasa-api' },
+                { text: "Bouncing Balls", link: 'bouncing-balls' },
+                { text: "Timer", link: 'timer' },
             ]
         }
     ]
@@ -198,12 +298,31 @@ function sidebarJS(): DefaultTheme.SidebarItem[] {
 
 /// Sidebar items for the Linux section.
 function sidebarLinux(): DefaultTheme.SidebarItem[] {
-    return [];
+    return [
+        {
+            text: 'Linux Notes',
+            collapsed: false,   
+            base: '/linux/',
+            items: [
+                { text: "Add User to Sudoers or Sudo Group", link: 'add-user-to-sudoers' },
+            ]
+        },
+    ];
 }
 
 /// Sidebar items for the Networking section.
 function sidebarNetworking(): DefaultTheme.SidebarItem[] {
-    return [];
+    return [
+        {
+            text: "Networking Notes",
+            collapsed: false,
+            base: '/net/',
+            items: [
+                { text: "TCP/UDP Ports" , link: 'ports'},
+                { text: "Clearing Cache and Cookies" , link: 'clear-cache-cookies'},
+            ]
+        }
+    ];
 }
 
 /// Sidebar items for the Photography section.

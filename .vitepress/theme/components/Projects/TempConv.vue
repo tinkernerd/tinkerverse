@@ -6,14 +6,15 @@
       </header>
       <article>
         <form>
-          <div>
-            <h3>Temp in F</h3>
-            <input type="number" v-model.number="fahrenheit" @input="updateCelsius" />
-          </div>
-          <div id="arrow">&harr;</div>
-          <div>
-            <h3>Temp in C</h3>
-            <input type="number" v-model.number="celsius" @input="updateFahrenheit" />
+          <div class="temp-section">
+            <div class="temp-box">
+              <h3>Temp in F</h3>
+              <input type="number" v-model.number="fahrenheit" @input="updateCelsius" />
+            </div>
+            <div class="temp-box">
+              <h3>Temp in C</h3>
+              <input type="number" v-model.number="celsius" @input="updateFahrenheit" />
+            </div>
           </div>
         </form>
         <footer>
@@ -26,6 +27,7 @@
     </div>
   </div>
 </template>
+
 
 <script setup>
 import { ref, computed } from "vue";
@@ -52,17 +54,15 @@ const headerColor = computed(() => {
 });
 </script>
 
+
 <style scoped>
 /* Temperature Converter Styles */
 .temp-converter {
-  max-width: 600px;
-
-  margin: 20px auto;
-  font-family: Arial, Helvetica, sans-serif;
+  max-width: 500px;
   border: 2px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
 }
 
 .temp-converter header {
@@ -80,42 +80,41 @@ const headerColor = computed(() => {
 
 .temp-converter article {
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
-.temp-converter h3 {
-  font-size: 1.1rem;
-  font-weight: normal;
-  color: #444;
-  margin-bottom: 0.5em;
+.temp-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+  position: relative;
 }
 
-.temp-converter input {
+.temp-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temp-box h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Traditional input box styles */
+.temp-converter input[type="number"] {
   width: 120px;
-  color: black;
-  padding: 10px;
-  font-size: 1.1rem;
+  padding: 5px 10px;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   text-align: right;
-  transition: box-shadow 0.3s ease;
+  appearance: auto; /* Ensure spinner controls are displayed */
 }
 
 .temp-converter input:focus {
-  outline: none;
-  box-shadow: 0 0 6px rgba(0, 153, 255, 0.5);
-}
-
-.temp-converter #arrow {
-  font-size: 2.5rem;
-  color: #888;
-}
-
-.temp-converter footer {
-  margin-top: 1em;
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.5;
+  outline: 2px solid #007bff;
+  box-shadow: none;
 }
 
 /* Temperature-based color classes with transitions */
@@ -132,5 +131,11 @@ const headerColor = computed(() => {
 .temp-converter .red {
   background: #ff6347;
   color: #fff;
+}
+
+.temp-converter footer {
+  margin-top: 1em;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 </style>

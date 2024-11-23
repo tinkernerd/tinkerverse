@@ -89,7 +89,6 @@ export default {
 <style lang="css">
 .quarter-year-counter {
   .main-box {
-    background: #ffffff;
     border: 2px solid #dedede;
     border-radius: 10px;
     padding: 20px;
@@ -106,7 +105,6 @@ export default {
 
   h1 {
     font-size: 32px;
-    color: #333;
     margin: 0 auto 10px; /* Center the title and add spacing below */
     text-align: center;
     display: inline-block; /* Ensure block-like behavior for ::after */

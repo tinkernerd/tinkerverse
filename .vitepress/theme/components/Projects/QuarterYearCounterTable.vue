@@ -32,8 +32,6 @@
                 </tfoot>
             </table>
         </div>
-        
-
     </div>
 </template>
 

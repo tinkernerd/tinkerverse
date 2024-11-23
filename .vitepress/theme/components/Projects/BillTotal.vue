@@ -55,7 +55,6 @@ export default {
   max-width: 600px;
   padding: 20px;
   margin: 20px auto;
-  background-color: rgba(249, 249, 249, 0.664);
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,7 +65,6 @@ export default {
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #333;
   text-align: center;
 }
 
@@ -92,7 +90,6 @@ export default {
 .menu-item label {
   font-size: 1em;
   font-weight: 400;
-  color: #555;
   cursor: pointer;
 }
 

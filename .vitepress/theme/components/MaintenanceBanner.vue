@@ -27,9 +27,8 @@ function onCloseClick() {
     <div class="container">
       <WarningIcon class="icon" />
       <span class="text">
-        <b>Scheduled StackBlitz Maintenance</b><span class="reason"> for SOC 2 Compliance Upgrades</span>: <b>Saturday, December 2nd, 8AM PST to 12PM PST</b>
+        <b>Notice:</b> This site is <b>under construction and maintenance</b>. Expect changes, improvements, and potential downtime.
       </span>
-      <a class="link" href="https://twitter.com/stackblitz" target="_blank">Learn more</a>
     </div>
     <button class="close-button" @click="onCloseClick">
       <CloseIcon />

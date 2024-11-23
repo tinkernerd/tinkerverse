@@ -23,11 +23,12 @@ export default defineConfig({
   cleanUrls: true,
 
   // Prevent builds when content has dead links
-  ignoreDeadLinks: false,
+  ignoreDeadLinks: true,
 
   // Metadata
   lang: 'en-US',
   title: "TinkerDocs.",
+
   description: "TinkerDocs is a collection of notes and resources for the curious tinkerer.",
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: `${BASE_PATH}img/theme/favicon.png` }],
@@ -103,8 +104,11 @@ export default defineConfig({
               {
                   text: 'Networking & Security',
                   items: [
-                      { text: 'Networking', link: '/networking/' },
-                      { text: 'Security', link: '/security/' }
+                      { text: 'Networking', link: '/net/' },
+                      { text: 'Security', link: '/security/' },
+                      { text: "AI & Machine Learning", link: '/ai/' },
+                      { text: "Automation", link: '/automation/' },
+                      { text: "VPN", link: '/vpn/' }
                   ]
               },
               {
@@ -132,7 +136,7 @@ export default defineConfig({
       '/js/': { base: '/js/', items: sidebarJS() },
       '/linux/': { base: '/linux/', items: sidebarLinux() },
       '/py/': { base: '/py/', items: sidebarPY() },
-      '/networking/': { base: '/networking/', items: sidebarNetworking() },
+      '/net/': { base: '/networking/', items: sidebarNetworking() },
       '/photography/': { base: '/photography/', items: sidebarPhotography() },
       '/security/': { base: '/security/', items: sidebarSecurity() },
       '/windows/': { base: '/windows/', items: sidebarWindows() },

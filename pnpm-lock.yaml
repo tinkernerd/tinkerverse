@@ -11,6 +11,9 @@ importers:
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
+      path-to-regexp:
+        specifier: ^8.2.0
+        version: 8.2.0
     devDependencies:
       '@types/node':
         specifier: ^22.9.0
@@ -712,6 +715,10 @@ packages:
 
   oniguruma-to-es@0.4.1:
     resolution: {integrity: sha512-rNcEohFz095QKGRovP/yqPIKc+nP+Sjs4YTHMv33nMePGKrq/r2eu9Yh4646M5XluGJsUnmwoXuiXE69KDs+fQ==}
+
+  path-to-regexp@8.2.0:
+    resolution: {integrity: sha512-TdrF7fW9Rphjq4RjrW0Kp2AW0Ahwu9sRGTkS6bvDi0SCwZlEZYmcfDbEsTz8RVk0EHIS/Vd1bv3JhG+1xZuAyQ==}
+    engines: {node: '>=16'}
 
   perfect-debounce@1.0.0:
     resolution: {integrity: sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA==}
@@ -1666,6 +1673,8 @@ snapshots:
       emoji-regex-xs: 1.0.0
       regex: 5.0.2
       regex-recursion: 4.2.1
+
+  path-to-regexp@8.2.0: {}
 
   perfect-debounce@1.0.0: {}
 
