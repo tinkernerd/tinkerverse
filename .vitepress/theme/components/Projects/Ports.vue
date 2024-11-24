@@ -39,7 +39,7 @@ export default {
   methods: {
     async loadPortsData() {
       try {
-        const response = await fetch("https"); // Update the path to your actual JSON file
+        const response = await fetch("https://raw.githubusercontent.com/tinkernerd/tinkerverse/refs/heads/main/docs/ports.json"); // Update the path to your actual JSON file
         const data = await response.json();
         this.ports = data.map((item) => ({
           number: item.port,

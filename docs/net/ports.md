@@ -13,15 +13,16 @@ dateCreated: 2018-09-21T23:50:00
 topic: Networking
 outline: deep
 ---
-
-<script setup>
-import Ports from '@theme/components/Projects/Ports.vue'
+<script setup lang="ts">
+import SearchTable from '@theme/components/Projects/SearchTable.vue';
+import { UDPTable } from '../links';
 </script>
+
+# UDP Ports Table
 
 # A list of All TCP & UDP ports.
 
 Thank you to [Maraisr/ports-list](https://github.com/maraisr/ports-list)
 
 ---
-
-<Ports/>
+<SearchTable :json="UDPTable" />

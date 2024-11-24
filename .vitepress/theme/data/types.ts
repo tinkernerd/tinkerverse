@@ -25,3 +25,8 @@ export interface Person {
   imgPath?: string;
   title?: string;
 }
+
+export interface SearchTableLinks {
+  url: string;
+  cols: { text: string}[];
+}
