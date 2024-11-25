@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8fe8816a48747ce8",
+        "id": "54d26a24d4bd2b78",
         "type": "tabs",
         "children": [
           {
-            "id": "dfe3fc413a3161dc",
+            "id": "f0f94e9ac340a7f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "net/ports.md",
+                "file": "bible/new-testament.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "ports"
+              "title": "new-testament"
             }
           }
         ]
@@ -164,6 +164,20 @@
   },
   "active": "05e54d1dccc4734c",
   "lastOpenFiles": [
+    "public/img/banners/Deuteronomy.jpg",
+    "public/img/banners/cautionary.png",
+    "public/img/banners/bible_open.jpg",
+    "public/img/banners/AI_dash.png",
+    "public/img/banners/1059237.jpg",
+    "public/img/banners/3d_dash.jpg",
+    "public/img/banners/windows.png",
+    "public/img/banners/weather.jpg",
+    "public/img/banners/Spicy popcorn.jpeg",
+    "public/img/banners/payphones.jpg",
+    "public/img/banners/papers_on_desk.jpg",
+    "public/img/banners",
+    "public/banners",
+    "bible/numbers.md",
     "linux/add-user-to-sudoers.md",
     "net/ports.md",
     "3d-printing/benchy-ender-3.md",
@@ -189,16 +203,12 @@
     "scripture/Acts-6.md",
     "scripture/Acts-1.md",
     "scripture/Acts-7.md",
-    "scripture/Acts-24.md",
-    "scripture/Acts-15.md",
     "scripture/move_md_files.py",
     "bible",
     "scripture/gen",
     "scripture/66 - Revelation",
     "scripture/65 - Jude",
     "scripture/64 - 3 John",
-    "scripture/63 - 2 John",
-    "scripture/62 - 1 John",
-    "scripture/61 - 2 Peter"
+    "scripture/63 - 2 John"
   ]
 }

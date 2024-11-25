@@ -27,6 +27,6 @@ export interface Person {
 }
 
 export interface SearchTableLinks {
-  url: string;
-  cols: { text: string}[];
+  url: string; // URL for fetching JSON data
+  cols: { text: string }[]; // Column definitions for the table
 }

@@ -321,6 +321,15 @@ function sidebarNetworking(): DefaultTheme.SidebarItem[] {
                 { text: "TCP/UDP Ports" , link: 'ports'},
                 { text: "Clearing Cache and Cookies" , link: 'clear-cache-cookies'},
             ]
+        },
+        {
+            text: "Port Tables",
+            collapsed: false,
+            base: '/net/',
+            items: [
+                { text: "TCP Ports" , link: 'tcp-ports'},
+                { text: "UDP Ports" , link: 'udp-ports'},
+            ]
         }
     ];
 }
