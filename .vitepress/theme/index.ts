@@ -4,8 +4,9 @@ import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './styles/index.scss';
 import './scripts/edit-link.ts';
-//import Banner from './components/Banner.vue'
-import MaintenanceBanner from './components/MaintenanceBanner.vue'
+import MaintenanceBanner from './components/MaintenanceBanner.vue';
+
+
 
 export default {
   extends: DefaultTheme,

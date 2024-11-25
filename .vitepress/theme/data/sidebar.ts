@@ -1,5 +1,5 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
-export { sidebarAviation, sidebarWindows, sidebarDocumentation, sidebarSecurity, sidebarRecipes, sidebarPhotography, sidebarNetworking, sidebarLinux, sidebar3dPrint, sidebarJS, sidebarArduino, sidebarDocker, sidebarBible, sidebarPY, sidebarGithub };
+export { sidebarAviation, sidebarWindows, sidebarDocumentation, sidebarSecurity, sidebarRecipes, sidebarPhotography, sidebarNetworking, sidebarLinux, sidebar3dPrint, sidebarJS, sidebarArduino, sidebarDocker, sidebarBible, sidebarPY, sidebarGithub, sidebarBibleOT, sidebarBibleNT };
 
 
 
@@ -87,12 +87,27 @@ function sidebarAviation(): DefaultTheme.SidebarItem[] {
 /// Sidebar items for the Bible section.
 function sidebarBible(): DefaultTheme.SidebarItem[] {
     return [
+        {
+            text: 'Bible Notes',
+            base: '/bible/',
+            items: [
+                { text: 'Sticky Notes', link: 'sticky-notes' },
+                { text: 'Who am I?', link: 'who-am-i' },
+                { text: 'Parable of the Lost Son', link: 'parable-lost-son' },
+
+            ]
+        }
+    ];
+}
+
+/// Sidebar items for the Bible section.
+function sidebarBibleOT(): DefaultTheme.SidebarItem[] {
+    return [
                 {
             text: 'Old Testament',
-            base: '/bible/',
-            collapsed: true,
+            base: '/bible/ot/',
+            collapsed: false,
             items: [
-                { text: 'Overview', link: 'old-testament' },
                 { text: 'Genesis', link: 'genesis' },
                 { text: 'Exodus', link: 'exodus' },
                 { text: 'Leviticus', link: 'leviticus' },
@@ -133,13 +148,18 @@ function sidebarBible(): DefaultTheme.SidebarItem[] {
                 { text: 'Zechariah', link: 'zechariah' },
                 { text: 'Malachi', link: 'malachi' },
             ]
-        },
+        }
+    ];
+}
+
+/// Sidebar items for the Bible section.
+function sidebarBibleNT(): DefaultTheme.SidebarItem[] {
+    return [
         {
             text: 'New Testament',
-            base: '/bible/',
-            collapsed: true,
+            base: '/bible/nt/',
+            collapsed: false,
             items: [
-                { text: 'Overview', link: 'new-testament' },
                 { text: 'Matthew', link: 'matthew' },
                 { text: 'Mark', link: 'mark' },
                 { text: 'Luke', link: 'luke' },
@@ -167,20 +187,6 @@ function sidebarBible(): DefaultTheme.SidebarItem[] {
                 { text: '3 John', link: '3-john' },
                 { text: 'Jude', link: 'jude' },
                 { text: 'Revelation', link: 'revelation' },
-            ]
-        },
-        {
-            text: 'Bible Study',
-            base: '/bible/',
-            items: [
-                { text: 'overview', link: 'old-testament' },
-            ]
-        },
-        {
-            text: 'Bible Notes',
-            base: '/bible/',
-            items: [
-                { text: 'overview', link: 'old-testament' },
             ]
         }
     ];

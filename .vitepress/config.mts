@@ -4,13 +4,13 @@ import mdFootnote from 'markdown-it-footnote';
 import { defineConfig, type HeadConfig } from 'vitepress';
 
 /* Nav and Sidebar */
-import {sidebarAviation, sidebarWindows, sidebarDocumentation, sidebarSecurity, sidebarRecipes, sidebarPhotography, sidebarNetworking, sidebarLinux, sidebar3dPrint, sidebarJS, sidebarArduino, sidebarDocker, sidebarBible, sidebarPY, sidebarGithub } from './theme/data/sidebar.ts'
+import {sidebarAviation, sidebarWindows, sidebarDocumentation, sidebarSecurity, sidebarRecipes, sidebarPhotography, sidebarNetworking, sidebarLinux, sidebar3dPrint, sidebarJS, sidebarArduino, sidebarDocker, sidebarBibleNT, sidebarBible, sidebarBibleOT, sidebarPY, sidebarGithub } from './theme/data/sidebar.ts'
 
 dotenv.config();
 
 
 const BASE_PATH = '/';
-const BASE_WITH_ORIGIN = `https://nicholasstull.com${BASE_PATH}`;
+const BASE_WITH_ORIGIN = `https://docs.nicholasstull.com${BASE_PATH}`;
 // https://vitepress.dev/reference/site-config
 
 export default defineConfig({
@@ -82,7 +82,14 @@ export default defineConfig({
     nav: [
         { text: 'About', link: '/about' },
         { text: 'Aviation', link: '/aviation/' },
-        { text: 'Bible', link: '/bible/' },
+        { text: 'Bible', 
+          items: [
+            { text: 'Testaments',
+              items: [
+              { text: 'Old Testament', link: '/bible/ot/' },
+              { text: 'New Testament', link: '/bible/nt/' }]},
+            { text: 'Notes', link: '/bible/' },
+            { text: 'Bible Study', link: '/bible/study/' }          ],},
         { text: 'Recipes', link: '/recipes/' },
         { text: 'Info Tech',
           items: [
@@ -130,6 +137,8 @@ export default defineConfig({
       '/arduino/': { base: '/arduino/', items: sidebarArduino() },
       '/aviation/': { base: '/aviation/', items: sidebarAviation() },
       '/bible/': { base: '/bible/', items: sidebarBible() },
+      '/bible/nt/': { base: '/bible/', items: sidebarBibleNT() },
+      '/bible/ot/': { base: '/bible/', items: sidebarBibleOT() },
       '/3d-printing/': { base: '/3d-printing/', items: sidebar3dPrint() },
       '/docker/': { base: '/docker/', items: sidebarDocker() },
       '/documentation/': { base: '/docs/', items: sidebarDocumentation() },
