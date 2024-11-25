@@ -9,7 +9,7 @@ banner: "![[numbers.png]]"
 banner_y: 0.496
 ---
 
-![Banner Image Alt Text](docs.nicholasstull.com/img/banners/numbers.png)
+![Banner Image Alt Text](http://docs.nicholasstull.com/img/banners/numbers.png)
 
 [Book of Numbers Summary: A Complete Animated Overview](https://youtu.be/tp5MIrMZFqo?si=pK4AIRNNp6VRmUbv)
 # Numbers Chapter Overview
